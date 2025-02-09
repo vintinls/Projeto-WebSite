@@ -1,0 +1,42 @@
+/* Estilos para o footer */
+footer {
+  background-color: #5b8b4d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  margin-top: 20px; /* Espaço acima do footer */
+}
+
+/* Bloco de conteúdo do footer */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Estilo para os links do footer */
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #a8ff8e; /* Cor ao passar o mouse */
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  .footer-links a {
+    font-size: 0.9rem;
+    margin: 0 10px;
+  }
+}

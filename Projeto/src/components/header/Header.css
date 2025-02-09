@@ -1,0 +1,93 @@
+/* Remove a margem e o padding do html e body */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Estilos para o header */
+header {
+  background-color: #ffffff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilo do logo */
+.logo {
+  width: 150px;
+  height: auto;
+}
+
+/* Estilo do título */
+h1 {
+  font-size: 2.2rem;
+  margin: 0;
+  color: #5b8b4d;
+  font-family: 'Bodoni Moda', serif;
+}
+
+/* Estilo da navegação */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #5b8b4d;
+  font-size: 1.3rem;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #a5fd8b;
+}
+
+/* Estilo dos ícones sociais */
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  width: 45px;
+  height: 45px;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    width: 120px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .social-icons {
+    gap: 10px;
+  }
+}
